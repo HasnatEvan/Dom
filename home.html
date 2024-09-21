@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+     <!-- DaisyUI ADD -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <main class="flex justify-center">
+        <!-- phone st -->
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3">
+                <!-- stat st -->
+                <div class="stats shadow">
+                    <div class="stat">
+                      <div class="stat-title">Total Amount</div>
+                      <div id="account-balance" class="stat-value">20000</div>
+                  
+                    </div>
+                  </div>
+                  
+                 <!-- stat end -->
+                 <div class="divider"></div>
+                 <!-- btn st -->
+                 <div>
+                    <button class="btn btn-lg">Add Money</button>
+                    <button class="btn btn-lg">Cash Out</button>
+                    <button class="btn btn-lg mt-2">Transaction</button>
+
+                 </div>
+                 <div class="divider"></div>
+
+                 <!-- btn-end -->
+                 <!-- hero st -->
+                  <!-- Add money from st -->
+                 <div class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <!--  -->
+                        <input id="input-amount" type="text" placeholder="Enter Your Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Password</span>
+                        </label>
+                        <!--  -->
+                        <input id="input-password" type="password" placeholder="Enter Your Password" class="input input-bordered" required />
+                        <label class="label">
+                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                        </label>
+                      </div>
+                      <div class="form-control mt-6">
+                        <!--  -->
+                        <button id="add-money-btn" class="btn btn-primary">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+                   <!-- Add money from end -->
+                    <!-- cash out from st -->
+                    <div class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                      <form class="card-body">
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Amount</span>
+                          </label>
+                          <!--  -->
+                          <input id="cash-out-amount" type="text" placeholder="Enter Your Amount" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                          <label class="label">
+                            <span class="label-text">Password</span>
+                          </label>
+                          <!--  -->
+                          <input id="cash-out-password" type="password" placeholder="Enter Your Password" class="input input-bordered" required />
+                          <label class="label">
+                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                          </label>
+                        </div>
+                        <div class="form-control mt-6">
+                          <!--  -->
+                          <button id="cash-out-btn" class="btn btn-primary">Cash Out</button>
+                        </div>
+                      </form>
+                    </div>
+                      
+                    <!-- cash out from end -->
+                 <!-- hero end -->
+              </div>
+            </div>
+          </div>
+         <!-- phone end -->
+
+    </main>
+    <script src="addmoney.js"></script>
+    <script src="utillites.js"></script>
+    
+</body>
+</html>
